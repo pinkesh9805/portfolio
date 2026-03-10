@@ -20,6 +20,7 @@ export const portfolioData = {
   email: "pinkeshpatel9805@gmail.com",
   github: "https://github.com/pinkesh9805",
   linkedin: "https://linkedin.com/in/pinkesh-patel-533b943a4",
+  resume: "https://docs.google.com/document/d/1jzR5Ttcsyb3zy97OshOD-pXBFYP_OYaJ/export?format=pdf",
 
   // Stats shown in About section
   stats: [

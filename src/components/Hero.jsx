@@ -112,7 +112,9 @@ const Hero = () => {
             Contact Me
           </button>
           <a
-            href="#"
+            href={portfolioData.resume}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-3 rounded-xl border border-slate-700 hover:border-slate-600 text-slate-400 hover:text-white font-medium text-sm transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 hover:bg-slate-800/50"
           >
             <Download size={15} />

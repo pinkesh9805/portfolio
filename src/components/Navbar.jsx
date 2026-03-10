@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Code2 } from "lucide-react";
-
+import { portfolioData } from "../data/portfolioData";
 const navLinks = [
   { label: "Home",     href: "#hero" },
   { label: "About",    href: "#about" },
@@ -94,7 +94,9 @@ const Navbar = () => {
 
           {/* Resume button (desktop) */}
           <a
-            href="#"
+            href={portfolioData.resume}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium rounded-lg border border-indigo-500/50 text-indigo-400 hover:bg-indigo-500/10 transition-all duration-200"
           >
             <Code2 size={14} />
@@ -133,10 +135,12 @@ const Navbar = () => {
             ))}
             <li className="pt-2 border-t border-slate-800/60">
               <a
-                href="#"
+                href={portfolioData.resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2.5 rounded-lg text-sm font-medium text-indigo-400 border border-indigo-500/40 text-center hover:bg-indigo-500/10 transition"
               >
-                Download Resume
+                View Resume
               </a>
             </li>
           </ul>
